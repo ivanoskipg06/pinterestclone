@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+:root {
+  --primary-color: #be1b33;
+  --secondary-color: #e9e9e9;
+  --contrast-color: #111;
+  --icon-color: #5f5f5f;
+}
+
+body {
+  width: 100%;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto Slab', serif;
+}
+
+.header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 15px;
+  padding: 4px 16px;
+  align-items: center;
+}
+
+.logo {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo:hover {
+  background-color: var(--secondary-color);
+}
+
+.logo svg {
+  fill: var(--primary-color);
+  width: 24px;
+  height: 24px;
+}
+
+.nav {
+  flex-shrink: 2;
+}
+
+.navbar-pinterest {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 15px;
+  align-items: center;
+}
+
+.nav {
+  padding: 12px 16px;
+  background-color: var(--contrast-color);
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 10px;
+  flex-grow: 1;
+  min-width: 120px;
+  background-color: var(--secondary-color);
+  border-radius: 25px;
+  padding: 12px 16px;
+  padding-right: 30px;
+}
+.search:hover {
+  background-color: rgba(225, 225, 225, 0.671);
+}
+
+.search-icon svg {
+  fill: var(--icon-color);
+  width: 16px;
+  height: 16px;
+}
+
+.search-input {
+  background-color: transparent;
+  color: var(--input-text-color);
+  font-size: 16px;
+  flex-grow: 1;
+  min-width: 48px;
+}
+
+.buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 2px;
+  align-items: center;
+}
+
+.notifications {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.notifications:hover {
+  background-color: var(--secondary-color);
+}
+
+.notifications svg {
+  fill: var(--icon-color);
+}
+
+.messages {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.messages:hover {
+  background-color: var(--secondary-color);
+}
+
+.messages svg {
+  fill: var(--icon-color);
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 1em;
+  border-radius: 7%;
+}
+
+.gallery {
+  padding: 10px;
+  columns: 5 250px;
+  column-gap: 1em;
+}
